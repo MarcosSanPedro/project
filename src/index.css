@@ -1,30 +1,31 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
-  --gold: #D4AF37;
-  --gold-light: #F2D675;
-  --gold-dark: #AA8C2C;
-  --black: #0A0A0A;
-  --black-light: #1A1A1A;
-  --black-dark: #000000;
+@theme {
+  --color-gold: oklch(75% 0.25 85);
+  --color-gold-light: oklch(85% 0.2 85);
+  --color-gold-dark: oklch(65% 0.3 85);
+  --color-midnight: oklch(10% 0.01 255);
+  --color-midnight-light: oklch(20% 0.01 255);
+  --color-midnight-dark: oklch(5% 0.01 255);
 }
 
-body {
-  font-family: 'Poppins', sans-serif;
-}
+@layer components {
+  .gold-gradient {
+    background: linear-gradient(
+      135deg,
+      var(--color-gold-light),
+      var(--color-gold),
+      var(--color-gold-dark)
+    );
+  }
 
-.gold-gradient {
-  background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
-}
+  .text-shadow {
+    text-shadow: 0 2px 4px oklch(0% 0 0 / 0.3);
+  }
 
-.text-shadow {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.glass-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  .glass-card {
+    background: oklch(100% 0 0 / 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid oklch(100% 0 0 / 0.2);
+  }
 }

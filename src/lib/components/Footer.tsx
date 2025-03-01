@@ -1,5 +1,5 @@
-import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
-import TikTokIcon from './icons/TikTokIcon';
+import { MapPin, Phone, Mail, Facebook, Instagram } from "lucide-react";
+import TikTokIcon from "./icons/TikTokIcon";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -13,25 +13,25 @@ const Footer = () => {
         { name: "Registro de Compañías", href: "#services" },
         { name: "Notarizaciones", href: "#services" },
         { name: "Trámites en Nicaragua", href: "#services" },
-        { name: "Reunificación Familiar", href: "#services" }
-      ]
+        { name: "Reunificación Familiar", href: "#services" },
+      ],
     },
     {
       title: "Recursos",
       links: [
         { name: "Preguntas Frecuentes", href: "#faq" },
         { name: "Testimonios", href: "#testimonials" },
-        { name: "Contacto", href: "#contact" }
-      ]
+        { name: "Contacto", href: "#contact" },
+      ],
     },
     {
       title: "Compañía",
       links: [
         { name: "Inicio", href: "#" },
         { name: "Sobre Nosotros", href: "#about" },
-        { name: "Nuestros Valores", href: "#nosotros" }
-      ]
-    }
+        { name: "Nuestros Valores", href: "#nosotros" },
+      ],
+    },
   ];
 
   return (
@@ -41,15 +41,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <a
-              href="#"
-              className="flex items-center space-x-2 mb-6"
-            >
+            <a href="#" className="flex items-center space-x-2 mb-6">
               <span className="text-gold font-bold text-2xl">MZ</span>
               <span className="text-2xl font-bold">Multiservices</span>
             </a>
             <p className="text-gray-400 mb-6">
-            Servicios profesionales de inmigración, preparación de impuestos y soluciones legales para ayudarte a alcanzar tus metas en los Estados Unidos.
+              Servicios profesionales de inmigración, preparación de impuestos y
+              soluciones legales para ayudarte a alcanzar tus metas en los
+              Estados Unidos.
             </p>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
@@ -61,13 +60,19 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gold" />
-                <a href="tel:+19543388978" className="text-gray-300 hover:text-gold transition-colors">
-                +1 (954) 338-8978
+                <a
+                  href="tel:+19543388978"
+                  className="text-gray-300 hover:text-gold transition-colors"
+                >
+                  +1 (954) 338-8978
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gold" />
-                <a href="mailto:info@mzmultiservices.com" className="text-gray-300 hover:text-gold transition-colors">
+                <a
+                  href="mailto:info@mzmultiservices.com"
+                  className="text-gray-300 hover:text-gold transition-colors"
+                >
                   info@mzmultiservices.com
                 </a>
               </div>
@@ -77,7 +82,9 @@ const Footer = () => {
           {/* Quick Links */}
           {footerSections.map((section, index) => (
             <div key={index}>
-              <h3 className="text-lg font-semibold mb-6 text-white">{section.title}</h3>
+              <h3 className="text-lg font-semibold mb-6 text-white">
+                {section.title}
+              </h3>
               <ul className="space-y-4">
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
@@ -99,15 +106,28 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Social Media */}
             <div>
-              <h4 className="text-lg font-semibold mb-4 text-white">Síguenos</h4>
+              <h4 className="text-lg font-semibold mb-4 text-white">
+                Síguenos
+              </h4>
               <div className="flex space-x-4">
                 {[
-                  { icon: Facebook, href: "https://www.facebook.com/cassandra.zeledon" },
-                  { icon: Instagram, href: "https://www.instagram.com/zeledoncassandra8" },
-                  { icon: TikTokIcon, href: "https://www.tiktok.com/@cassandra.zeledon" },
+                  {
+                    icon: Facebook,
+                    href: "https://www.facebook.com/cassandra.zeledon",
+                  },
+                  {
+                    icon: Instagram,
+                    href: "https://www.instagram.com/zeledoncassandra8",
+                  },
+                  {
+                    icon: TikTokIcon,
+                    href: "https://www.tiktok.com/@cassandra.zeledon",
+                  },
                 ].map((social, index) => (
                   <a
                     key={index}
+                    target="_blank"
+                    rel="noreferrer"
                     href={social.href}
                     className="bg-midnight p-2 rounded-full hover:bg-gold transition-colors border border-gold/30"
                   >
@@ -119,7 +139,9 @@ const Footer = () => {
 
             {/* Business Hours */}
             <div>
-              <h4 className="text-lg font-semibold mb-4 text-white">Horario de atención</h4>
+              <h4 className="text-lg font-semibold mb-4 text-white">
+                Horario de atención
+              </h4>
               <div className="space-y-2">
                 <div className="flex justify-between">
                   <span className="text-gray-400">Lunes - Viernes</span>
@@ -138,7 +160,9 @@ const Footer = () => {
 
             {/* WhatsApp */}
             <div className="lg:text-right">
-              <h4 className="text-lg font-semibold mb-4 text-white">¿Necesitas ayuda inmediata?</h4>
+              <h4 className="text-lg font-semibold mb-4 text-white">
+                ¿Necesitas ayuda inmediata?
+              </h4>
               <a
                 href="https://wa.me/19543388978"
                 target="_blank"
@@ -167,11 +191,16 @@ const Footer = () => {
             <p className="text-gray-500 text-sm">
               © {currentYear} MZ Multiservices. Todos los derechos reservados.
             </p>
-            <div className="flex space-x-6 text-sm">
-              <a href="https://mmbytesolutions.com/" className="text-gray-500 hover:text-gold transition-colors">
-              Diseñado por MMByte Solutions
+            <sup className="text-gray-500 text-xs">
+              Designed & developed by
+              <a
+                href="https://mmbytesolutions.com/"
+                target="_blank"
+                className="text-gray-500 hover:text-gold transition-colors ml-1"
+              >
+                MM Bytes
               </a>
-            </div>
+            </sup>
           </div>
         </div>
       </div>
