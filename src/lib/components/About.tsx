@@ -51,7 +51,7 @@ const About = () => {
     },
     {
       icon: Award,
-      value: '95%',
+      value: '100%',
       label: 'Satisfacción',
       description: 'Clientes satisfechos con nuestros servicios'
     },

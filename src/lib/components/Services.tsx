@@ -7,42 +7,42 @@ const services = [
     icon: Passport,
     title: 'Trámites Migratorios',
     description: 'Asistencia completa en solicitudes de visas, residencia permanente, ciudadanía y todo tipo de procesos migratorios con asesoría personalizada.',
-    image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: '25.jpg',
     whatsappMessage: '¡Hola! Me gustaría hacer una consulta sobre los servicios de trámites migratorios.'
   },
   {
     icon: Calculator,
     title: 'Servicios de Impuestos',
     description: 'Preparación profesional de impuestos personales y empresariales, maximizando tus devoluciones y asegurando el cumplimiento de todas las obligaciones fiscales.',
-    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2011&q=80',
+    image: '21.jpg',
     whatsappMessage: '¡Hola! Necesito ayuda con la preparación de mis impuestos.'
   },
   {
     icon: Briefcase,
     title: 'Registro de Compañías',
     description: 'Formación y registro legal de empresas, obtención de EIN, licencias comerciales y toda la documentación necesaria para establecer tu negocio en Estados Unidos.',
-    image: 'https://images.unsplash.com/photo-1664575599736-c5197c684128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: '20.jpg',
     whatsappMessage: '¡Hola! Me gustaría obtener información sobre el registro de una compañía.'
   },
   {
     icon: FileCheck2,
     title: 'Notarizaciones',
     description: 'Servicios de notaría pública para certificar y autenticar documentos legales, declaraciones juradas, poderes y otros documentos importantes.',
-    image: 'https://images.unsplash.com/photo-1568144628058-25b7349bdb81?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: '22.jpg',
     whatsappMessage: '¡Hola! Necesito servicios de notarización de documentos.'
   },
   {
     icon: Landmark,
     title: 'Trámites Legales en Nicaragua',
     description: 'Gestión de documentos y trámites legales en Nicaragua, incluyendo certificados, apostillas, poderes y representación legal para ciudadanos nicaragüenses en el extranjero.',
-    image: 'https://images.unsplash.com/photo-1589394815804-964ed0be2eb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+    image: '24.jpg',
     whatsappMessage: '¡Hola! Necesito ayuda con trámites legales en Nicaragua.'
   },
   {
     icon: Users,
-    title: 'Reunificación Familiar',
-    description: 'Ayudamos a familias a reunirse a través de peticiones familiares, visas de prometido/a, y otros procesos migratorios para mantener a las familias unidas.',
-    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    title: 'Asilo Político',
+    description: 'Te guiamos en el proceso de solicitud de asilo político, asegurando que tu caso esté bien preparado y respaldado. Nuestro equipo te acompaña en cada paso para que puedas obtener la protección que necesitas en EE.UU.',
+    image: '23.jpg',
     whatsappMessage: '¡Hola! Me gustaría aprender más sobre el proceso de Reunificación Familiar.'
   }
 ];
